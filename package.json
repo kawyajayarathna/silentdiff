@@ -4,7 +4,14 @@
   "description": "Catch the silent regressions AI writes into your code. Baseline API responses, DOM snapshots, and contracts - get alerted the moment they drift. Chrome extension, MV3, TypeScript, MIT.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "watch": "vite build --watch",
+    "lint": "eslint src tests --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\" \"tests/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -13,9 +20,34 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/kawyajayarathna/silentdiff/issues"
   },
-  "homepage": "https://github.com/kawyajayarathna/silentdiff#readme"
+  "homepage": "https://github.com/kawyajayarathna/silentdiff#readme",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^3.0.0",
+    "@playwright/test": "^1.63.0",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/chrome": "^0.3.4",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.71.0",
+    "@typescript-eslint/parser": "^8.71.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitest/ui": "^5.0.3",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^10.12.0",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.5.28",
+    "prettier": "^3.9.9",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
+  }
 }

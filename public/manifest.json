@@ -1,0 +1,7 @@
+{
+  "manifest_version": 3,
+  "name": "SilentDiff",
+  "version": "0.1.0",
+  "description": "Catch the silent regressions AI writes into your code.",
+  "action": { "default_title": "SilentDiff" }
+}
