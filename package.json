@@ -1,0 +1,21 @@
+{
+  "name": "silentdiff",
+  "version": "1.0.0",
+  "description": "Catch the silent regressions AI writes into your code. Baseline API responses, DOM snapshots, and contracts - get alerted the moment they drift. Chrome extension, MV3, TypeScript, MIT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawyajayarathna/silentdiff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kawyajayarathna/silentdiff/issues"
+  },
+  "homepage": "https://github.com/kawyajayarathna/silentdiff#readme"
+}
